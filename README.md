@@ -11,7 +11,12 @@ Os toasts geralmente, são utilizados com objetivo de apresentar mensagens curta
   
   <img src="https://user-images.githubusercontent.com/29150094/173208250-5cd1b203-5e5f-4dfb-af6d-b57edfbf9d85.png" width="100" height="60" />
   <img src="https://user-images.githubusercontent.com/29150094/173208287-67a3398a-cdce-4ded-8a8a-d04a4e4c6959.png" width="160" height="60" />
-  
+    
+</div>
+
+<div align="middle">
+  <h4>Segundo componente: SNACKBAR</h4> 
+    
 </div>
 
 ## :hammer: Funcionalidades do projeto
