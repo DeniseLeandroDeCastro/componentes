@@ -1,5 +1,5 @@
 # componentes
-<p align="center">
+<p>
 No projeto serão apresentados diversos componentes, de forma individual, sem estar num app. 
 A finalidade é um estudo mais detalhado de cada componente do Android. O primeiro apresentado, é um toast.
 Os toasts geralmente, são utilizados com objetivo de apresentar mensagens curtas para o usuário.
@@ -12,11 +12,13 @@ Os toasts geralmente, são utilizados com objetivo de apresentar mensagens curta
     
 </div>
 
+<p>
+Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo eu configurei a cor azul para o background e o texto "DESFAZER" é cyano. Ao clicar em "DESFAZER", aparece um toast escrito desfeito. É claro que aqui são todos exemplos simples, apenas ilustrativos, num app de verdade, as configurações seriam de acordo com o contexto da aplicação. OBS.: Mudei a cor do botão com o nome SNACKBAR, apenas para dar mais destaque mesmo, não tem nada a ver com a nova funcionalidade, que acontece apenas em relação à snackbar.
+</p>
+
 <div align="middle">
   <h4>Segundo componente: SNACKBAR</h4> 
-  
-  <img src="https://user-images.githubusercontent.com/29150094/173208866-eff6ccbb-49e4-485e-a0ce-cb7575a67266.png" width="280" height="550" /> </br>
-    
+  <img src="https://user-images.githubusercontent.com/29150094/173208866-eff6ccbb-49e4-485e-a0ce-cb7575a67266.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250177-1a318c97-99aa-4d04-9c19-7ad1d0b3bb6c.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250335-2a953b19-ed14-4ad8-bf39-43e2b5eb079d.png" width="280" height="550" /></br>   
 </div>
 
 ## :hammer: Funcionalidades do projeto
@@ -26,6 +28,7 @@ Os toasts geralmente, são utilizados com objetivo de apresentar mensagens curta
 - `Funcionalidade 3`: Criar um snackbar
 - `Funcionalidade 4`: Ações do snackbar
 - `Funcionalidade 5`: Criar um spinner estático
+
 
 
 
