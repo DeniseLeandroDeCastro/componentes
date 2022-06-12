@@ -69,4 +69,11 @@
             android:text="Atribuir spinner"/>
 
     </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:padding="32dp"
+        android:max="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
