@@ -9,12 +9,14 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         button_toast.setOnClickListener(this)
         button_snack.setOnClickListener(this)
+        loadSpinner()
     }
 
     override fun onClick(v: View) {
@@ -37,6 +39,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 snackbar.show()
             }
         }
+    }
+
+    private fun loadSpinner() {
+        val mList = listOf("Gramas", "Kg", "Arroba", "Tonelada")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, mList)
+        spinner_dynamic.adapter = adapter
     }
 
     private fun toast(str: String) {
