@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.button_snack -> {
                 val snackbar = Snackbar.make(linear_root, "Essa é a SNACKBAR", Snackbar.LENGTH_LONG)
+                snackbar.setAction("Desfazer", View.OnClickListener {
+                    toast("Desfeito")
+                })
+                snackbar.setActionTextColor(Color.CYAN)
+                snackbar.setBackgroundTint(Color.BLUE)
                 snackbar.show()
             }
         }
