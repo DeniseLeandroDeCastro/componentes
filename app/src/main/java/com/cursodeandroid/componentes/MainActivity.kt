@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         button_toast.setOnClickListener(this)
+        button_snack.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -24,6 +26,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 toast.view = layout
 
                 toast.show()
+            }
+            R.id.button_snack -> {
+                val snackbar = Snackbar.make(linear_root, "Essa é a SNACKBAR", Snackbar.LENGTH_LONG)
+                snackbar.show()
             }
         }
     }

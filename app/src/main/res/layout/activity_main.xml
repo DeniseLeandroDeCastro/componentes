@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/linear_root"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="8dp"
@@ -14,6 +15,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="toast"
+        android:backgroundTint="@color/teal_700"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="snackbar"
         android:backgroundTint="@color/teal_700"
         tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>
