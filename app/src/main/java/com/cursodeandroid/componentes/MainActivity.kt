@@ -8,7 +8,7 @@ import android.widget.*
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button_toast.setOnClickListener(this)
         button_snack.setOnClickListener(this)
+        button_get_spinner.setOnClickListener(this)
+        button_set_spinner.setOnClickListener(this)
+
+        spinner_static.onItemSelectedListener = this
         loadSpinner()
     }
 
@@ -38,7 +42,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 snackbar.setBackgroundTint(Color.BLUE)
                 snackbar.show()
             }
+            R.id.button_get_spinner -> {
+                val selectedItem = spinner_static.selectedItem
+                val selectedItemId = spinner_static.selectedItemId
+                val selectedItemPosition = spinner_static.selectedItemPosition
+
+                toast("Position: $selectedItemId: $selectedItem")
+            }
+            R.id.button_set_spinner -> {
+                spinner_static.setSelection(2)
+            }
         }
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        when(parent?.id) {
+            R.id.spinner_static -> {
+                toast(parent?.getItemAtPosition(position).toString())
+            }
+        }
+    }
+
+    override fun onNothingSelected(p0: AdapterView<*>?) {
+        toast("Nothing")
     }
 
     private fun loadSpinner() {

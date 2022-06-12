@@ -42,4 +42,31 @@
         android:layout_marginTop="16dp"
         android:background="@android:drawable/btn_dropdown"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/linear_button_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_get_spinner"
+            android:layout_width="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Obter spinner"/>
+
+        <Button
+            android:id="@+id/button_set_spinner"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Atribuir spinner"/>
+
+    </LinearLayout>
 </LinearLayout>
