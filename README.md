@@ -28,8 +28,9 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
 - `Funcionalidade 3`: Criar um snackbar
 - `Funcionalidade 4`: Ações do snackbar
 - `Funcionalidade 5`: Criar um spinner estático
-
-
+- `Funcionalidade 6`: Criar um spinner dinâmico
+- `Funcionalidade 7`: Funcionalidades do spinner
+- `Funcionalidade 8`: Criar um seekbar
 
 
 
