@@ -9,7 +9,7 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnItemSelectedListener
-, SeekBar.OnSeekBarChangeListener{
+, SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
 
         spinner_static.onItemSelectedListener = this
         seekbar.setOnSeekBarChangeListener(this)
+
+        switch_on_off.setOnCheckedChangeListener(this)
         loadSpinner()
     }
 
@@ -61,6 +63,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
             }
             R.id.button_set_seekbar -> {
                 seekbar.progress = 10
+            }
+        }
+    }
+
+    override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
+        when (buttonView.id) {
+            R.id.switch_on_off -> {
+                toast("Switch: ${if (isChecked) "true" else "false"}")
             }
         }
     }

@@ -107,6 +107,11 @@
             android:layout_marginEnd="8dp"
             android:text="Atribuir seekbar"
             android:backgroundTint="@color/teal_200"/>
-
     </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch_on_off"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
