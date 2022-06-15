@@ -21,6 +21,11 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
   <img src="https://user-images.githubusercontent.com/29150094/173208866-eff6ccbb-49e4-485e-a0ce-cb7575a67266.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250177-1a318c97-99aa-4d04-9c19-7ad1d0b3bb6c.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250335-2a953b19-ed14-4ad8-bf39-43e2b5eb079d.png" width="280" height="550" /></br>   
 </div>
 
+<div align="middle">
+  <h4>Terceiro componente: SEEKBAR</h4></br>
+  <img src="https://user-images.githubusercontent.com/29150094/173470225-ccba812f-2dc9-43fb-8e25-b4a4789aebb6.png" width="380" height="200" /> 
+</div>
+
 ## :hammer: Funcionalidades do projeto
 
 - `Funcionalidade 1`: Criar um toast convencional
@@ -31,6 +36,7 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
 - `Funcionalidade 6`: Criar um spinner dinâmico
 - `Funcionalidade 7`: Funcionalidades do spinner
 - `Funcionalidade 8`: Criar um seekbar
+
 
 
 
