@@ -6,10 +6,9 @@ Os toasts geralmente, são utilizados com objetivo de apresentar mensagens curta
 </p>
 
 <div align="middle">
-  <h4>Primeiro componente: TOAST</br>
+  <h4>TOAST</br>
   Customizado</h4> 
-  <img src="https://user-images.githubusercontent.com/29150094/173208287-67a3398a-cdce-4ded-8a8a-d04a4e4c6959.png" width="160" height="60" />
-    
+  <img src="https://user-images.githubusercontent.com/29150094/173208287-67a3398a-cdce-4ded-8a8a-d04a4e4c6959.png" width="160" height="60" />  
 </div>
 
 <p>
@@ -17,23 +16,23 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
 </p>
 
 <div align="middle">
-  <h4>Segundo componente: SNACKBAR</h4> 
+  <h4>SNACKBAR</h4> 
   <img src="https://user-images.githubusercontent.com/29150094/173208866-eff6ccbb-49e4-485e-a0ce-cb7575a67266.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250177-1a318c97-99aa-4d04-9c19-7ad1d0b3bb6c.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250335-2a953b19-ed14-4ad8-bf39-43e2b5eb079d.png" width="280" height="550" /></br>   
 </div>
 
 <div align="middle">
-  <h4>Terceiro componente: SEEKBAR</h4></br>
+  <h4>SEEKBAR</h4></br>
   <img src="https://user-images.githubusercontent.com/29150094/173470225-ccba812f-2dc9-43fb-8e25-b4a4789aebb6.png" width="380" height="200" /> 
 </div>
 
 <div align="middle">
-  <h4>Quarto componente: CHECKBOX</h4></br>
+  <h4>CHECKBOX</h4></br>
   <img src="https://user-images.githubusercontent.com/29150094/174091400-548510b2-8c09-4259-a722-c24f89ab126f.png" width="150" height="60" /> 
   <img src="https://user-images.githubusercontent.com/29150094/174092057-af28d6b1-54b0-483c-991e-22655a2541fa.png" width="150" height="60" />
 </div>
 
 <div align="middle">
-  <h4>Quinto componente: RADIOGROUP / RADIO BUTTON</h4></br>
+  <h4>RADIOGROUP / RADIO BUTTON</h4></br>
   <img src="https://user-images.githubusercontent.com/29150094/174133614-3f65df8d-5e17-4deb-aad3-34e8d30b81a2.png" width="180" height="140" /> 
 </div>
 <p>
@@ -41,8 +40,13 @@ O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os bot�
 </p>
 
 <div align="middle">
-  <h4>Quarto componente: DATEPICKER</h4></br>
+  <h4>DATEPICKER</h4></br>
   <img src="https://user-images.githubusercontent.com/29150094/174149223-35a5bc05-7635-4624-a388-c2bb01608d85.png" width="250" height="320" /> 
+</div>
+
+<div align="middle">
+  <h4>TIMEPICKER</h4></br>
+  <img src="https://user-images.githubusercontent.com/29150094/174180543-dda19f4c-f500-407b-85f6-833f4421658b.png" width="350" height="400" /> 
 </div>
 
 ## :hammer: Funcionalidades do projeto
@@ -58,8 +62,7 @@ O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os bot�
 - `Funcionalidade  9`: Criar uma checkbox
 - `Funcionalidade 10`: Criar um RadioGroup com dois RadioButtons
 - `Funcionalidade 11`: DatePicker
-
-
+- `Funcionalidade 12`: TimePicker
 
 
 
