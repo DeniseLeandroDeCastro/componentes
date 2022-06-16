@@ -32,17 +32,26 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
   <img src="https://user-images.githubusercontent.com/29150094/174092057-af28d6b1-54b0-483c-991e-22655a2541fa.png" width="150" height="60" />
 </div>
 
+<div align="middle">
+  <h4>Quinto componente: RADIOGROUP / RADIO BUTTON</h4></br>
+  <img src="https://user-images.githubusercontent.com/29150094/174133614-3f65df8d-5e17-4deb-aad3-34e8d30b81a2.png" width="180" height="140" /> 
+</div>
+<p>
+O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os botões de opção. Os RadioButtons agrupados em um RadioGroup, funcionam de forma que apenas uma opção pode ser marcada. Ao marcar um RadioButton, ele não poderá ser desmarcado se pressionar o mesmo RadioButton novamente, ele será desmarcado automaticamente quando você pressionar qualquer outro RadioButton dentro do mesmo RadioGroup.
+</p>
+
 ## :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: Criar um toast convencional
-- `Funcionalidade 2`: Criar um toast customizado
-- `Funcionalidade 3`: Criar um snackbar
-- `Funcionalidade 4`: Ações do snackbar
-- `Funcionalidade 5`: Criar um spinner estático
-- `Funcionalidade 6`: Criar um spinner dinâmico
-- `Funcionalidade 7`: Funcionalidades do spinner
-- `Funcionalidade 8`: Criar uma seekbar
-- `Funcionalidade 9`: Criar uma checkbox
+- `Funcionalidade  1`: Criar um toast convencional
+- `Funcionalidade  2`: Criar um toast customizado
+- `Funcionalidade  3`: Criar um snackbar
+- `Funcionalidade  4`: Ações do snackbar
+- `Funcionalidade  5`: Criar um spinner estático
+- `Funcionalidade  6`: Criar um spinner dinâmico
+- `Funcionalidade  7`: Funcionalidades do spinner
+- `Funcionalidade  8`: Criar uma seekbar
+- `Funcionalidade  9`: Criar uma checkbox
+- `Funcionalidade 10`: Criar um RadioGroup com dois RadioButtons
 
 
 
