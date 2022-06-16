@@ -1,5 +1,6 @@
 package com.cursodeandroid.componentes
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
         seekbar.setOnSeekBarChangeListener(this)
 
         switch_on_off.setOnCheckedChangeListener(this)
+
+        text_mais_componentes.setOnClickListener(this)
         loadSpinner()
     }
 
@@ -64,13 +67,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
             R.id.button_set_seekbar -> {
                 seekbar.progress = 10
             }
+            R.id.text_mais_componentes -> {
+                startActivity(Intent(applicationContext, MoreComponentsActivity::class.java))
+            }
         }
     }
 
     override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
         when (buttonView.id) {
             R.id.switch_on_off -> {
-                toast("Switch: ${if (isChecked) "true" else "false"}")
+                toast("Switch: ${if (isChecked) "Ligado" else "Desligado"}")
             }
         }
     }

@@ -2,9 +2,9 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/linear_root"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context=".MainActivity">
@@ -14,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="toast"
         android:backgroundTint="@color/teal_700"
+        android:text="toast"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
@@ -23,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="snackbar"
         android:backgroundTint="@color/teal_200"
+        android:text="snackbar"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Spinner
@@ -53,37 +53,37 @@
         <Button
             android:id="@+id/button_get_spinner"
             android:layout_width="0dp"
-            android:layout_marginTop="16dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:text="Obter spinner"/>
+            android:text="Obter spinner" />
 
         <Button
             android:id="@+id/button_set_spinner"
-            android:backgroundTint="@color/teal_200"
             android:layout_width="0dp"
-            android:layout_marginTop="16dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:text="Atribuir spinner"/>
+            android:backgroundTint="@color/teal_200"
+            android:text="Atribuir spinner" />
 
     </LinearLayout>
 
     <SeekBar
         android:id="@+id/seekbar"
-        android:padding="12dp"
-        android:max="50"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:padding="12dp" />
 
     <TextView
         android:id="@+id/text_seekbar_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Valor seekbar: 0"/>
+        android:text="Valor seekbar: 0" />
 
     <LinearLayout
         android:id="@+id/linear_button_seek"
@@ -95,23 +95,33 @@
             android:id="@+id/button_get_seekbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:text="Obter seekbar"/>
+            android:layout_weight="1"
+            android:text="Obter seekbar" />
 
         <Button
             android:id="@+id/button_set_seekbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:text="Atribuir seekbar"
-            android:backgroundTint="@color/teal_200"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
+            android:text="Atribuir seekbar" />
     </LinearLayout>
 
     <Switch
         android:id="@+id/switch_on_off"
-        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/text_mais_componentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:text="Mais Componentes..."/>
 </LinearLayout>
