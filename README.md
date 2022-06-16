@@ -40,6 +40,11 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
 O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os botões de opção. Os RadioButtons agrupados em um RadioGroup, funcionam de forma que apenas uma opção pode ser marcada. Ao marcar um RadioButton, ele não poderá ser desmarcado se pressionar o mesmo RadioButton novamente, ele será desmarcado automaticamente quando você pressionar qualquer outro RadioButton dentro do mesmo RadioGroup.
 </p>
 
+<div align="middle">
+  <h4>Quarto componente: DATEPICKER</h4></br>
+  <img src="https://user-images.githubusercontent.com/29150094/174149223-35a5bc05-7635-4624-a388-c2bb01608d85.png" width="250" height="320" /> 
+</div>
+
 ## :hammer: Funcionalidades do projeto
 
 - `Funcionalidade  1`: Criar um toast convencional
@@ -52,7 +57,7 @@ O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os bot�
 - `Funcionalidade  8`: Criar uma seekbar
 - `Funcionalidade  9`: Criar uma checkbox
 - `Funcionalidade 10`: Criar um RadioGroup com dois RadioButtons
-
+- `Funcionalidade 11`: DatePicker
 
 
 
