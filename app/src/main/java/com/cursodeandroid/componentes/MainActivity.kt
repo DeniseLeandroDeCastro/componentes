@@ -10,7 +10,7 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnItemSelectedListener
-, SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener {
+, CompoundButton.OnCheckedChangeListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +20,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
         button_snack.setOnClickListener(this)
         button_get_spinner.setOnClickListener(this)
         button_set_spinner.setOnClickListener(this)
-        button_get_seekbar.setOnClickListener(this)
-        button_set_seekbar.setOnClickListener(this)
+
 
         spinner_static.onItemSelectedListener = this
-        seekbar.setOnSeekBarChangeListener(this)
+
 
         switch_on_off.setOnCheckedChangeListener(this)
 
@@ -61,12 +60,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
             R.id.button_set_spinner -> {
                 spinner_static.setSelection(2)
             }
-            R.id.button_get_seekbar -> {
-                toast("Seekbar: ${seekbar.progress}")
-            }
-            R.id.button_set_seekbar -> {
-                seekbar.progress = 10
-            }
+
             R.id.text_mais_componentes -> {
                 startActivity(Intent(applicationContext, MoreComponentsActivity::class.java))
             }
@@ -79,18 +73,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
                 toast("Switch: ${if (isChecked) "Ligado" else "Desligado"}")
             }
         }
-    }
-
-    override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-        text_seekbar_value.text = "Valor seekbar: $progress"
-    }
-
-    override fun onStartTrackingTouch(seekBar: SeekBar?) {
-        toast("Track started")
-    }
-
-    override fun onStopTrackingTouch(seekBar: SeekBar?) {
-        toast("Track stoped")
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
