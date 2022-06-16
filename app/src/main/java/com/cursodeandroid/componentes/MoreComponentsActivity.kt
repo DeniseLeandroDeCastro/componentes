@@ -13,6 +13,8 @@ class MoreComponentsActivity : AppCompatActivity(), View.OnClickListener, Compou
         setContentView(R.layout.activity_more_components)
 
         check_on_off.setOnCheckedChangeListener(this)
+        radio_on.setOnCheckedChangeListener(this)
+        radio_off.setOnCheckedChangeListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -23,6 +25,12 @@ class MoreComponentsActivity : AppCompatActivity(), View.OnClickListener, Compou
         when (buttonView.id) {
             R.id.check_on_off -> {
                 toast("Checkbox: ${if (isChecked) "On" else "Off"}")
+            }
+            R.id.radio_on -> {
+                toast("Radio Button On: ${if (isChecked) "On" else "Off"}")
+            }
+            R.id.radio_off -> {
+                toast("Radio Button Off: ${if (isChecked) "On" else "Off"}")
             }
         }
     }
