@@ -17,7 +17,7 @@ Na snackbar, é possível configurar ações e também o layout. Aqui no exemplo
 
 <div align="middle">
   <h4>SNACKBAR</h4> 
-  <img src="https://user-images.githubusercontent.com/29150094/173208866-eff6ccbb-49e4-485e-a0ce-cb7575a67266.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250177-1a318c97-99aa-4d04-9c19-7ad1d0b3bb6c.png" width="280" height="550" /> <img src="https://user-images.githubusercontent.com/29150094/173250335-2a953b19-ed14-4ad8-bf39-43e2b5eb079d.png" width="280" height="550" /></br>   
+  <img src="https://user-images.githubusercontent.com/29150094/173208866-eff6ccbb-49e4-485e-a0ce-cb7575a67266.png" width="180" height="450" /> <img src="https://user-images.githubusercontent.com/29150094/173250177-1a318c97-99aa-4d04-9c19-7ad1d0b3bb6c.png" width="180" height="450" /> <img src="https://user-images.githubusercontent.com/29150094/173250335-2a953b19-ed14-4ad8-bf39-43e2b5eb079d.png" width="180" height="450" /></br>   
 </div>
 
 <div align="middle">
