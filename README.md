@@ -49,6 +49,11 @@ O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os bot�
   <img src="https://user-images.githubusercontent.com/29150094/174180543-dda19f4c-f500-407b-85f6-833f4421658b.png" width="350" height="400" /> 
 </div>
 
+<div align="middle">
+  <h4>PROGRESSBAR</h4></br>
+  <img src="https://user-images.githubusercontent.com/29150094/174192913-095c3188-c634-466d-86ed-17fea3d3af9f.png" width="50" height="50" /> 
+</div>
+
 ## :hammer: Funcionalidades do projeto
 
 - `Funcionalidade  1`: Criar um toast convencional
@@ -63,6 +68,7 @@ O RadioGroup é usado para fazer o agrupamento de RadioButtons, que são os bot�
 - `Funcionalidade 10`: Criar um RadioGroup com dois RadioButtons
 - `Funcionalidade 11`: DatePicker
 - `Funcionalidade 12`: TimePicker
+- `Funcionalidade 13`: ProgressBar
 
 
 
