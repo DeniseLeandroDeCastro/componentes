@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
                 startActivity(Intent(applicationContext, MoreComponentsActivity::class.java))
             }
         }
+        progress.visibility = View.GONE
     }
 
     override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
