@@ -1,11 +1,14 @@
 package com.cursodeandroid.componentes
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.DatePicker
+import android.widget.TimePicker
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_time.*
@@ -13,7 +16,8 @@ import kotlinx.android.synthetic.main.activity_time.text_mais_componentes
 import java.text.SimpleDateFormat
 import java.util.*
 
-class TimeActivity : AppCompatActivity(), View.OnClickListener, DatePickerDialog.OnDateSetListener {
+class TimeActivity : AppCompatActivity(), View.OnClickListener, DatePickerDialog.OnDateSetListener,
+        TimePicker.OnTimeChangedListener {
 
     private val mSimpleDate = SimpleDateFormat("dd/MM/yyyy")
 
@@ -22,6 +26,13 @@ class TimeActivity : AppCompatActivity(), View.OnClickListener, DatePickerDialog
         setContentView(R.layout.activity_time)
 
         button_date.setOnClickListener(this)
+
+        button_get_time.setOnClickListener(this)
+
+        button_set_time.setOnClickListener(this)
+
+        timepicker.setOnTimeChangedListener(this)
+
         text_mais_componentes.setOnClickListener(this)
     }
 
@@ -34,6 +45,29 @@ class TimeActivity : AppCompatActivity(), View.OnClickListener, DatePickerDialog
                 val year = calendar.get(Calendar.YEAR)
                 DatePickerDialog(this, this, year, month, day).show()
             }
+
+            R.id.button_get_time -> {
+                if (Build.VERSION.SDK_INT >= 23) {
+                    val hour = timepicker.hour
+                    val minute = timepicker.minute
+                    toast("$hour:$minute")
+                } else {
+                    val hour = timepicker.currentHour
+                    val minute = timepicker.currentMinute
+                    toast("$hour:$minute")
+                }
+            }
+
+            R.id.button_set_time -> {
+                if (Build.VERSION.SDK_INT >= 23) {
+                    timepicker.hour = 20
+                    timepicker.minute = 20
+                } else {
+                    timepicker.currentHour = 20
+                    timepicker.currentMinute = 20
+                }
+            }
+
             R.id.text_mais_componentes -> {
                 startActivity(Intent(applicationContext, MainActivity::class.java))
             }
@@ -43,6 +77,10 @@ class TimeActivity : AppCompatActivity(), View.OnClickListener, DatePickerDialog
         val date = Calendar.getInstance()
         date.set(year, month, dayOfMonth)
         button_date.text = mSimpleDate.format(date.time)
+    }
+
+    override fun onTimeChanged(view: TimePicker, hourOfDay: Int, minute: Int) {
+        toast("$hourOfDay:$minute")
     }
 
     private fun toast(str: String) {

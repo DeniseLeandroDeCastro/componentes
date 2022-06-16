@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/iconLeft"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="32dp"
+    android:padding="16dp"
     tools:context=".TimeActivity">
 
     <Button
@@ -15,7 +16,35 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
         android:text="DatePicker" />
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="200dp"
+        android:layout_height="380dp"
+        android:layout_below="@+id/button_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button_get_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timepicker"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:text="Obter horário"/>
+
+    <Button
+        android:id="@+id/button_set_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timepicker"
+        android:layout_toRightOf="@+id/button_get_time"
+        android:layout_marginLeft="10dp"
+        android:text="Atribuir horário"/>
 
     <TextView
         android:id="@+id/text_mais_componentes"
